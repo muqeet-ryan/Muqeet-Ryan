@@ -8,7 +8,7 @@
   <circle cx="25" cy="17" r="6" fill="#ff5f56"/>
   <circle cx="50" cy="17" r="6" fill="#ffbd2e"/>
   <circle cx="75" cy="17" r="6" fill="#27c93f"/>
-  <text x="350" y="22" text-anchor="middle" font-family="Consolas, Monaco, monospace" font-size="13" fill="#8b949e">muqeet@portfolio: ~</text>
+  <text x="350" y="22" text-anchor="middle" font-family="Consolas, Monaco, monospace" font-size="13" fill="#8b949e">muqeetryan@portfolio: ~</text>
 
   <!-- Typing text area -->
   <clipPath id="clip1">
@@ -32,8 +32,8 @@
   </clipPath>
 
   <text x="185" y="97" clip-path="url(#clip1)"
-        font-family="Fira Code, Consolas, Monaco, monospace" font-size="30" font-weight="700" fill="#7ee787">Hello World 🌍💻▌</text>
+        font-family="Fira Code, Consolas, Monaco, monospace" font-size="30" font-weight="700" fill="#7ee787">:~$ Hello World! ▌</text>
 
   <text x="235" y="97" clip-path="url(#clip2)"
-        font-family="Fira Code, Consolas, Monaco, monospace" font-size="30" font-weight="700" fill="#e6edf3">MUQEET RYAN▌</text>
+        font-family="Fira Code, Consolas, Monaco, monospace" font-size="30" font-weight="700" fill="#7ee787">MUQƎƎT RYAN ▌</text>
 </svg>
