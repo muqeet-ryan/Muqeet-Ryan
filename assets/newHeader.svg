@@ -1,5 +1,5 @@
 <svg width="700" height="140" viewBox="0 0 700 140" xmlns="http://www.w3.org/2000/svg">
-  <rect x="0" y="0" width="700" height="140" rx="14" fill="#0d1117" stroke="#30363d" stroke-width="1.5"/>
+  <rect x="0" y="0" width="700" height="140" rx="14" fill="#050505" stroke="#30363d" stroke-width="1.5"/>
   <rect x="0" y="0" width="700" height="34" rx="14" fill="#161b22"/>
   <rect x="0" y="20" width="700" height="14" fill="#161b22"/>
   <circle cx="25" cy="17" r="6" fill="#ff5f56"/>
@@ -26,12 +26,12 @@
   </clipPath>
 
   <text x="206.0" y="97" clip-path="url(#clip1)"
-        font-family="Fira Code, Consolas, Monaco, monospace" font-size="30" font-weight="700" fill="#7ee787">Hello World </text>
+        font-family="Fira Code, Consolas, Monaco, monospace" font-size="30" font-weight="700" fill="#7ee787">:~$ Hello World! </text>
 
   <text x="251.0" y="97" clip-path="url(#clip2)"
-        font-family="Fira Code, Consolas, Monaco, monospace" font-size="30" font-weight="700" fill="#e6edf3">MUQEET RYAN</text>
+        font-family="Fira Code, Consolas, Monaco, monospace" font-size="30" font-weight="700" fill="#7ee787">MUQƎƎT RYAN </text>
 
-  <rect x="206.0" y="70" width="3" height="34" fill="#7ee787">
+  <rect x="206.0" y="70" width="10" height="30" fill="#7ee787">
     <animate attributeName="x" calcMode="discrete"
       values="206.0;224.0;242.0;260.0;278.0;296.0;314.0;332.0;350.0;368.0;386.0;404.0;422.0;458.0;494.0;494.0;458.0;422.0;404.0;386.0;368.0;350.0;332.0;314.0;296.0;278.0;260.0;242.0;224.0;206.0;251.0;269.0;287.0;305.0;323.0;341.0;359.0;377.0;395.0;413.0;431.0;449.0;449.0;431.0;413.0;395.0;377.0;359.0;341.0;323.0;305.0;287.0;269.0;251.0;251.0"
       keyTimes="0.0;0.01286;0.02571;0.03857;0.05143;0.06429;0.07714;0.09;0.10286;0.11571;0.12857;0.14143;0.15429;0.16714;0.18;0.33;0.33714;0.34429;0.35143;0.35857;0.36571;0.37286;0.38;0.38714;0.39429;0.40143;0.40857;0.41571;0.42286;0.43;0.5;0.51364;0.52727;0.54091;0.55455;0.56818;0.58182;0.59545;0.60909;0.62273;0.63636;0.65;0.8;0.80909;0.81818;0.82727;0.83636;0.84545;0.85455;0.86364;0.87273;0.88182;0.89091;0.9;1.0"
