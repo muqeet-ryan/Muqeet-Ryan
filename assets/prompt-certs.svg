@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="36" viewBox="0 0 800 36" role="img" aria-label="github@portfolio:~$ cat ~/certifications.txt">
+<title>github@portfolio:~$ cat ~/certifications.txt</title>
+<!--
+  SKELETON: only the prompt line exists right now. To add certification lines:
+  1. Each line adds 28px. For N lines, set height to 36 + 28*N + 4 in THREE places:
+     the <svg height>, the viewBox (0 0 800 H), and the <rect height> (H - 2).
+     Example for 2 lines: H = 96 -> height="96", viewBox="0 0 800 96", rect height="94".
+  2. Paste lines below the command text, first at y="53", then y="81", y="109", and so on.
+  3. Line templates (green [✓] = earned, blue [~] = in progress). Keep &lt; &gt; escaped if you use them:
+       <text x="24" y="53" fill="#c9d1d9"><tspan fill="#00ff41" font-weight="700">[✓]</tspan> CERT NAME — ISSUER — YEAR</text>
+       <text x="24" y="81" fill="#c9d1d9"><tspan fill="#58a6ff" font-weight="700">[~]</tspan> CERT NAME ........ in progress</text>
+  Only list certifications you have actually earned with [✓].
+-->
+<style>text{font-family:'Fira Code','JetBrains Mono',Consolas,Menlo,'DejaVu Sans Mono','Courier New',monospace;font-size:16px}</style>
+<rect x="1" y="1" width="798" height="34" rx="8" fill="#0d1117" stroke="#30363d" stroke-width="2"/>
+<text x="24" y="23" textLength="182.4" lengthAdjust="spacing"><tspan fill="#00ff41" font-weight="700">github@portfolio</tspan><tspan fill="#c9d1d9">:</tspan><tspan fill="#58a6ff" font-weight="700">~</tspan><tspan fill="#c9d1d9">$</tspan></text>
+<text x="216" y="23" fill="#c9d1d9" textLength="230.4" lengthAdjust="spacing">cat ~/certifications.txt</text>
+</svg>

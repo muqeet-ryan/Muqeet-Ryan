@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="36" viewBox="0 0 800 36" role="img" aria-label="github@portfolio:~$">
+<title>github@portfolio:~$</title>
+<!-- Final empty prompt with a blinking cursor. Cursor x=216 sits right after the 20-char prompt. -->
+<style>
+text{font-family:'Fira Code','JetBrains Mono',Consolas,Menlo,'DejaVu Sans Mono','Courier New',monospace;font-size:16px}
+.cur{animation:blink 1.06s steps(1,end) infinite}
+@keyframes blink{0%,55%{opacity:1}55.01%,100%{opacity:0}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<rect x="1" y="1" width="798" height="34" rx="8" fill="#0d1117" stroke="#30363d" stroke-width="2"/>
+<text x="24" y="23" textLength="182.4" lengthAdjust="spacing"><tspan fill="#00ff41" font-weight="700">github@portfolio</tspan><tspan fill="#c9d1d9">:</tspan><tspan fill="#58a6ff" font-weight="700">~</tspan><tspan fill="#c9d1d9">$</tspan></text>
+<rect class="cur" x="216" y="9" width="8.6" height="19" fill="#00ff41"/>
+</svg>
