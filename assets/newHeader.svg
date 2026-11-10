@@ -1,76 +1,150 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="134" viewBox="0 0 800 134" role="img" aria-label="muqeetryan@portfolio:~$ whoami → muqeetryan">
-<title>muqeetryan@portfolio:~$ whoami</title>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="134" viewBox="0 0 800 134" role="img" aria-label="github@portfolio:~$ whoami → muqeetryan">
+<title>github@portfolio:~$ whoami</title>
+
+<!--
+  EDITING GUIDE
+  Font: 16px monospace, approximately 9.6px per character.
+
+  Prompt:  github@portfolio:~$ = 19 chars = 182.4px
+  Space:   1 char = 9.6px
+  Command: whoami = 6 chars = 57.6px
+  Output:  muqeetryan = 10 chars = 96px
+-->
+
 <style>
-text{font-family:'Fira Code','JetBrains Mono',Consolas,Menlo,'DejaVu Sans Mono','Courier New',monospace;font-size:16px}
-.t{font-size:13px}
-
-/* typewriter reveal: each clip rect grows left-to-right, one character per step */
-.rv{transform-box:fill-box;transform-origin:left center;transform:scaleX(0);animation-fill-mode:forwards;animation-duration:6s;animation-iteration-count:1}
-.r1{animation-name:k1}
-.r2{animation-name:k2}
-.r3{animation-name:k3}
-
-/* cursor travels with the typing, then jumps to line 2 on "Enter" */
-.mv{animation:mv 6s forwards}
-.cur{animation:blink 1.06s steps(1,end) infinite}
-
-/* timeline (6s): prompt 0.5-2.3s | whoami 2.9-3.8s | Enter 4.1s | output 4.5-5.5s */
-@keyframes k1{0%,8.33%{transform:scaleX(0);animation-timing-function:steps(24,end)}38.33%,100%{transform:scaleX(1)}}
-@keyframes k2{0%,48.33%{transform:scaleX(0);animation-timing-function:steps(6,end)}63.33%,100%{transform:scaleX(1)}}
-@keyframes k3{0%,75%{transform:scaleX(0);animation-timing-function:steps(10,end)}91.67%,100%{transform:scaleX(1)}}
-@keyframes mv{
-  0%,8.33%{transform:translate(0px,0px);animation-timing-function:steps(24,end)}
-  38.33%,48.33%{transform:translate(230.4px,0px);animation-timing-function:steps(6,end)}
-  63.33%,68.33%{transform:translate(288px,0px)}
-  68.34%,75%{transform:translate(0px,34px);animation-timing-function:steps(10,end)}
-  91.67%,100%{transform:translate(96px,34px)}
+text {
+  font-family: 'Fira Code', 'JetBrains Mono', Consolas, Menlo,
+    'DejaVu Sans Mono', 'Courier New', monospace;
+  font-size: 16px;
 }
-@keyframes blink{0%,55%{opacity:1}55.01%,100%{opacity:0}}
 
-@media (prefers-reduced-motion:reduce){
-  *{animation:none!important}
-  .rv{transform:none}
-  .mv{transform:translate(96px,34px)}
+.rv {
+  transform-box: fill-box;
+  transform-origin: left center;
+  transform: scaleX(0);
+  animation-fill-mode: forwards;
+  animation-duration: 6s;
+  animation-iteration-count: 1;
+}
+
+.r1 { animation-name: k1; }
+.r2 { animation-name: k2; }
+.r3 { animation-name: k3; }
+
+.mv { animation: mv 6s forwards; }
+.cur { animation: blink 1.06s steps(1,end) infinite; }
+
+@keyframes k1 {
+  0%, 8.33% {
+    transform: scaleX(0);
+    animation-timing-function: steps(19,end);
+  }
+  38.33%, 100% { transform: scaleX(1); }
+}
+
+@keyframes k2 {
+  0%, 48.33% {
+    transform: scaleX(0);
+    animation-timing-function: steps(6,end);
+  }
+  63.33%, 100% { transform: scaleX(1); }
+}
+
+@keyframes k3 {
+  0%, 75% {
+    transform: scaleX(0);
+    animation-timing-function: steps(10,end);
+  }
+  91.67%, 100% { transform: scaleX(1); }
+}
+
+@keyframes mv {
+  0%, 8.33% {
+    transform: translate(0px,0px);
+    animation-timing-function: steps(19,end);
+  }
+  38.33%, 48.33% {
+    transform: translate(182.4px,0px);
+    animation-timing-function: steps(6,end);
+  }
+  63.33%, 68.33% {
+    transform: translate(249.6px,0px);
+  }
+  68.34%, 75% {
+    transform: translate(0px,34px);
+    animation-timing-function: steps(10,end);
+  }
+  91.67%, 100% {
+    transform: translate(96px,34px);
+  }
+}
+
+@keyframes blink {
+  0%,55% { opacity: 1; }
+  55.01%,100% { opacity: 0; }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  * { animation: none !important; }
+  .rv { transform: none; }
+  .mv { transform: translate(96px,34px); }
 }
 </style>
+
 <defs>
-  <clipPath id="c1"><rect class="rv r1" x="24" y="24" width="230.4" height="26"/></clipPath>
-  <clipPath id="c2"><rect class="rv r2" x="254.4" y="24" width="57.6" height="26"/></clipPath>
-  <clipPath id="c3"><rect class="rv r3" x="24" y="58" width="96" height="26"/></clipPath>
+  <clipPath id="c1">
+    <rect class="rv r1" x="24" y="24" width="182.4" height="26"/>
+  </clipPath>
+
+  <clipPath id="c2">
+    <rect class="rv r2" x="216" y="24" width="57.6" height="26"/>
+  </clipPath>
+
+  <clipPath id="c3">
+    <rect class="rv r3" x="24" y="58" width="96" height="26"/>
+  </clipPath>
 </defs>
 
-<!-- window body -->
-<rect x="1" y="1" width="798" height="132" rx="14" fill="#0d1117"/>
+<!-- Window body -->
+<rect x="1" y="1" width="798" height="132" rx="0" fill="#0d1117"/>
 
 <!-- Mac title bar -->
-<rect x="1" y="1" width="798" height="34" rx="14" fill="#161b22"/>
+<rect x="1" y="1" width="798" height="34" rx="0" fill="#161b22"/>
 <rect x="1" y="21" width="798" height="14" fill="#161b22"/>
+
 <circle cx="25" cy="18" r="6" fill="#ff5f56"/>
 <circle cx="50" cy="18" r="6" fill="#ffbd2e"/>
 <circle cx="75" cy="18" r="6" fill="#27c93f"/>
-<text class="t" x="400" y="23" text-anchor="middle" fill="#8b949e">muqeetryan@portfolio: ~</text>
 
-<!-- window outline (drawn last so the border stays clean over the bar) -->
-<rect x="1" y="1" width="798" height="132" rx="14" fill="none" stroke="#30363d" stroke-width="2"/>
+<text x="400" y="23" text-anchor="middle" fill="#8b949e">github@portfolio: ~</text>
 
-<!-- terminal content, shifted below the title bar -->
+<!-- Window outline -->
+<rect x="1" y="1" width="798" height="132" rx="0"
+      fill="none" stroke="#30363d" stroke-width="2"/>
+
+<!-- Terminal content -->
 <g transform="translate(0,34)">
 
-  <!-- line 1: prompt, then command -->
+  <!-- Prompt -->
   <g clip-path="url(#c1)">
-    <text x="24" y="42" textLength="220.8" lengthAdjust="spacing"><tspan fill="#00ff41" font-weight="700">github@portfolio</tspan><tspan fill="#c9d1d9">:</tspan><tspan fill="#58a6ff" font-weight="700">~</tspan><tspan fill="#c9d1d9">$</tspan></text>
-  </g>
-  <g clip-path="url(#c2)">
-    <text x="254.4" y="42" fill="#c9d1d9" textLength="57.6" lengthAdjust="spacing">whoami</text>
+    <text x="24" y="42" textLength="182.4" lengthAdjust="spacing"><tspan fill="#00ff41" font-weight="700">github@portfolio</tspan><tspan fill="#c9d1d9">:</tspan><tspan fill="#58a6ff" font-weight="700">~</tspan><tspan fill="#c9d1d9">$</tspan></text>
   </g>
 
-  <!-- line 2: command output, typed char by char -->
+  <!-- Command, with one space after $ -->
+  <g clip-path="url(#c2)">
+    <text x="216" y="42" fill="#c9d1d9" textLength="57.6" lengthAdjust="spacing">whoami</text>
+  </g>
+
+  <!-- Output -->
   <g clip-path="url(#c3)">
     <text x="24" y="76" fill="#c9d1d9" textLength="96" lengthAdjust="spacing">muqeetryan</text>
   </g>
 
-  <!-- cursor -->
-  <g class="mv"><rect class="cur" x="24" y="28" width="8.6" height="19" fill="#00ff41"/></g>
+  <!-- Cursor -->
+  <g class="mv">
+    <rect class="cur" x="24" y="28" width="8.6" height="19" fill="#00ff41"/>
+  </g>
 
 </g>
 </svg>
