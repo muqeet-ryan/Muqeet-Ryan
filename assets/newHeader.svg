@@ -1,42 +1,76 @@
-<svg width="700" height="140" viewBox="0 0 700 140" xmlns="http://www.w3.org/2000/svg">
-  <rect x="0" y="0" width="700" height="140" rx="14" fill="#050505" stroke="#30363d" stroke-width="1.5"/>
-  <rect x="0" y="0" width="700" height="34" rx="14" fill="#161b22"/>
-  <rect x="0" y="20" width="700" height="14" fill="#161b22"/>
-  <circle cx="25" cy="17" r="6" fill="#ff5f56"/>
-  <circle cx="50" cy="17" r="6" fill="#ffbd2e"/>
-  <circle cx="75" cy="17" r="6" fill="#27c93f"/>
-  <text x="350" y="22" text-anchor="middle" font-family="Consolas, Monaco, monospace" font-size="13" fill="#8b949e">muqeet@portfolio: ~</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="134" viewBox="0 0 800 134" role="img" aria-label="muqeetryan@portfolio:~$ whoami → muqeetryan">
+<title>muqeetryan@portfolio:~$ whoami</title>
+<style>
+text{font-family:'Fira Code','JetBrains Mono',Consolas,Menlo,'DejaVu Sans Mono','Courier New',monospace;font-size:16px}
+.t{font-size:13px}
 
-  <clipPath id="clip1">
-    <rect x="206.0" y="65" width="0" height="45">
-      <animate attributeName="width" calcMode="discrete"
-        values="0;18;36;54;72;90;108;126;144;162;180;198;216;252;288;288;252;216;198;180;162;144;126;108;90;72;54;36;18;0;0"
-        keyTimes="0.0;0.01286;0.02571;0.03857;0.05143;0.06429;0.07714;0.09;0.10286;0.11571;0.12857;0.14143;0.15429;0.16714;0.18;0.33;0.33714;0.34429;0.35143;0.35857;0.36571;0.37286;0.38;0.38714;0.39429;0.40143;0.40857;0.41571;0.42286;0.43;1.0"
-        dur="10s" repeatCount="indefinite"/>
-    </rect>
-  </clipPath>
+/* typewriter reveal: each clip rect grows left-to-right, one character per step */
+.rv{transform-box:fill-box;transform-origin:left center;transform:scaleX(0);animation-fill-mode:forwards;animation-duration:6s;animation-iteration-count:1}
+.r1{animation-name:k1}
+.r2{animation-name:k2}
+.r3{animation-name:k3}
 
-  <clipPath id="clip2">
-    <rect x="251.0" y="65" width="0" height="45">
-      <animate attributeName="width" calcMode="discrete"
-        values="0;0;18;36;54;72;90;108;126;144;162;180;198;198;180;162;144;126;108;90;72;54;36;18;0;0"
-        keyTimes="0.0;0.5;0.51364;0.52727;0.54091;0.55455;0.56818;0.58182;0.59545;0.60909;0.62273;0.63636;0.65;0.8;0.80909;0.81818;0.82727;0.83636;0.84545;0.85455;0.86364;0.87273;0.88182;0.89091;0.9;1.0"
-        dur="10s" repeatCount="indefinite"/>
-    </rect>
-  </clipPath>
+/* cursor travels with the typing, then jumps to line 2 on "Enter" */
+.mv{animation:mv 6s forwards}
+.cur{animation:blink 1.06s steps(1,end) infinite}
 
-  <text x="206.0" y="97" clip-path="url(#clip1)"
-        font-family="Fira Code, Consolas, Monaco, monospace" font-size="30" font-weight="700" fill="#7ee787">:~$ Hello World! </text>
+/* timeline (6s): prompt 0.5-2.3s | whoami 2.9-3.8s | Enter 4.1s | output 4.5-5.5s */
+@keyframes k1{0%,8.33%{transform:scaleX(0);animation-timing-function:steps(24,end)}38.33%,100%{transform:scaleX(1)}}
+@keyframes k2{0%,48.33%{transform:scaleX(0);animation-timing-function:steps(6,end)}63.33%,100%{transform:scaleX(1)}}
+@keyframes k3{0%,75%{transform:scaleX(0);animation-timing-function:steps(10,end)}91.67%,100%{transform:scaleX(1)}}
+@keyframes mv{
+  0%,8.33%{transform:translate(0px,0px);animation-timing-function:steps(24,end)}
+  38.33%,48.33%{transform:translate(230.4px,0px);animation-timing-function:steps(6,end)}
+  63.33%,68.33%{transform:translate(288px,0px)}
+  68.34%,75%{transform:translate(0px,34px);animation-timing-function:steps(10,end)}
+  91.67%,100%{transform:translate(96px,34px)}
+}
+@keyframes blink{0%,55%{opacity:1}55.01%,100%{opacity:0}}
 
-  <text x="251.0" y="97" clip-path="url(#clip2)"
-        font-family="Fira Code, Consolas, Monaco, monospace" font-size="30" font-weight="700" fill="#7ee787">MUQƎƎT RYAN </text>
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important}
+  .rv{transform:none}
+  .mv{transform:translate(96px,34px)}
+}
+</style>
+<defs>
+  <clipPath id="c1"><rect class="rv r1" x="24" y="24" width="230.4" height="26"/></clipPath>
+  <clipPath id="c2"><rect class="rv r2" x="254.4" y="24" width="57.6" height="26"/></clipPath>
+  <clipPath id="c3"><rect class="rv r3" x="24" y="58" width="96" height="26"/></clipPath>
+</defs>
 
-  <rect x="206.0" y="70" width="10" height="30" fill="#7ee787">
-    <animate attributeName="x" calcMode="discrete"
-      values="206.0;224.0;242.0;260.0;278.0;296.0;314.0;332.0;350.0;368.0;386.0;404.0;422.0;458.0;494.0;494.0;458.0;422.0;404.0;386.0;368.0;350.0;332.0;314.0;296.0;278.0;260.0;242.0;224.0;206.0;251.0;269.0;287.0;305.0;323.0;341.0;359.0;377.0;395.0;413.0;431.0;449.0;449.0;431.0;413.0;395.0;377.0;359.0;341.0;323.0;305.0;287.0;269.0;251.0;251.0"
-      keyTimes="0.0;0.01286;0.02571;0.03857;0.05143;0.06429;0.07714;0.09;0.10286;0.11571;0.12857;0.14143;0.15429;0.16714;0.18;0.33;0.33714;0.34429;0.35143;0.35857;0.36571;0.37286;0.38;0.38714;0.39429;0.40143;0.40857;0.41571;0.42286;0.43;0.5;0.51364;0.52727;0.54091;0.55455;0.56818;0.58182;0.59545;0.60909;0.62273;0.63636;0.65;0.8;0.80909;0.81818;0.82727;0.83636;0.84545;0.85455;0.86364;0.87273;0.88182;0.89091;0.9;1.0"
-      dur="10s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" calcMode="discrete"
-      values="1;0" keyTimes="0;0.5" dur="0.9s" repeatCount="indefinite"/>
-  </rect>
+<!-- window body -->
+<rect x="1" y="1" width="798" height="132" rx="14" fill="#0d1117"/>
+
+<!-- Mac title bar -->
+<rect x="1" y="1" width="798" height="34" rx="14" fill="#161b22"/>
+<rect x="1" y="21" width="798" height="14" fill="#161b22"/>
+<circle cx="25" cy="18" r="6" fill="#ff5f56"/>
+<circle cx="50" cy="18" r="6" fill="#ffbd2e"/>
+<circle cx="75" cy="18" r="6" fill="#27c93f"/>
+<text class="t" x="400" y="23" text-anchor="middle" fill="#8b949e">muqeetryan@portfolio: ~</text>
+
+<!-- window outline (drawn last so the border stays clean over the bar) -->
+<rect x="1" y="1" width="798" height="132" rx="14" fill="none" stroke="#30363d" stroke-width="2"/>
+
+<!-- terminal content, shifted below the title bar -->
+<g transform="translate(0,34)">
+
+  <!-- line 1: prompt, then command -->
+  <g clip-path="url(#c1)">
+    <text x="24" y="42" textLength="220.8" lengthAdjust="spacing"><tspan fill="#00ff41" font-weight="700">github@portfolio</tspan><tspan fill="#c9d1d9">:</tspan><tspan fill="#58a6ff" font-weight="700">~</tspan><tspan fill="#c9d1d9">$</tspan></text>
+  </g>
+  <g clip-path="url(#c2)">
+    <text x="254.4" y="42" fill="#c9d1d9" textLength="57.6" lengthAdjust="spacing">whoami</text>
+  </g>
+
+  <!-- line 2: command output, typed char by char -->
+  <g clip-path="url(#c3)">
+    <text x="24" y="76" fill="#c9d1d9" textLength="96" lengthAdjust="spacing">muqeetryan</text>
+  </g>
+
+  <!-- cursor -->
+  <g class="mv"><rect class="cur" x="24" y="28" width="8.6" height="19" fill="#00ff41"/></g>
+
+</g>
 </svg>
