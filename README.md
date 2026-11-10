@@ -1,104 +1,165 @@
-<div align="center">
-  <img src="./assets/newHeader.svg" alt="Header" width="700"/>
-</div>
+<!--
+  QUICK MAP (top to bottom): header > skills > projects > certs > leetcode > contact > end cursor
+  LAYOUT RULES: every block is 800px wide, every table uses cellpadding 10, one <br/> between sections.
+  COLORS: green 00ff41 = prompt/accent, blue 58a6ff = path, 161b22 = badge background (matches terminal).
+  PLACEHOLDERS (Ctrl+H, replace all): GH_USERNAME, REPO_NAME, PROJECT_NAME, DESCRIPTION, TECH,
+    CERTIFICATION_NAME, ISSUING_ORGANIZATION, YEAR, LC_USERNAME, LINKEDIN_USERNAME, YOUR_PORTFOLIO_URL
+  WHY SVG PROMPTS: GitHub strips colors from text, so only images can be green. Everything else is real text.
+  NOTE: column widths below add up to 800 so tables line up with the SVG prompts. Keep that total.
+-->
 
-<br>
+<!-- HEADER: animated terminal window -->
+<img src="./assets/newHeader.svg" alt="github@portfolio:~$ whoami → github" width="800"/>
 
+<br/>
 
-##  Technical Skills
+<!-- SKILLS: label column 130 + badges column 670 = 800. To add a skill, copy one img line. -->
+<img src="./assets/prompt-skills.svg" alt="github@portfolio:~$ ls ~/skills" width="800"/>
 
-### Programming Languages
-<table>
+<table width="800" cellpadding="10" cellspacing="0">
 <tr>
-<td align="center" width="120">
-<img src="https://skillicons.dev/icons?i=js" height="28"/><br>
-<sub>JavaScript</sub>
+<td width="130" valign="middle"><code>languages</code></td>
+<td width="670" valign="middle">
+<img src="https://img.shields.io/badge/C%23-161b22?style=flat-square&logo=dotnet&logoColor=512BD4" alt="C#"/>
+<img src="https://img.shields.io/badge/JavaScript-161b22?style=flat-square&logo=javascript&logoColor=F7DF1E" alt="JavaScript"/>
+</td>
+</tr>
+<tr>
+<td valign="middle"><code>frontend</code></td>
+<td valign="middle">
+<img src="https://img.shields.io/badge/React.js-161b22?style=flat-square&logo=react&logoColor=61DAFB" alt="React.js"/>
+<img src="https://img.shields.io/badge/Tailwind_CSS-161b22?style=flat-square&logo=tailwindcss&logoColor=06B6D4" alt="Tailwind CSS"/>
+</td>
+</tr>
+<tr>
+<td valign="middle"><code>backend</code></td>
+<td valign="middle">
+<img src="https://img.shields.io/badge/ASP.NET_Core-161b22?style=flat-square&logo=dotnet&logoColor=512BD4" alt="ASP.NET Core"/>
+<img src="https://img.shields.io/badge/Express.js-161b22?style=flat-square&logo=express&logoColor=white" alt="Express.js"/>
+<img src="https://img.shields.io/badge/SQL_Server-161b22?style=flat-square&logo=microsoftsqlserver&logoColor=CC2927" alt="SQL Server"/>
+<img src="https://img.shields.io/badge/MongoDB-161b22?style=flat-square&logo=mongodb&logoColor=47A248" alt="MongoDB"/>
+</td>
+</tr>
+<tr>
+<td valign="middle"><code>testing</code></td>
+<td valign="middle">
+<img src="https://img.shields.io/badge/Playwright-161b22?style=flat-square&logo=playwright&logoColor=2EAD33" alt="Playwright"/>
+<img src="https://img.shields.io/badge/xUnit-161b22?style=flat-square&logo=dotnet&logoColor=512BD4" alt="xUnit"/>
+<img src="https://img.shields.io/badge/Postman-161b22?style=flat-square&logo=postman&logoColor=FF6C37" alt="Postman"/>
+<img src="https://img.shields.io/badge/k6-161b22?style=flat-square&logo=k6&logoColor=7D64FF" alt="k6"/>
+</td>
+</tr>
+<tr>
+<td valign="middle"><code>devOps & deployment</code></td>
+<td valign="middle">
+<img src="https://img.shields.io/badge/Git-161b22?style=flat-square&logo=git&logoColor=F05032" alt="Git"/>
+<img src="https://img.shields.io/badge/GitHub-161b22?style=flat-square&logo=github&logoColor=white" alt="GitHub"/>
+<img src="https://img.shields.io/badge/Linux-161b22?style=flat-square&logo=linux&logoColor=FCC624" alt="Linux"/>
+<img src="https://img.shields.io/badge/Docker-161b22?style=flat-square&logo=docker&logoColor=2496ED" alt="Docker"/>
+<img src="https://img.shields.io/badge/GitHub_Actions_CI%2FCD-161b22?style=flat-square&logo=githubactions&logoColor=2088FF" alt="GitHub Actions CI/CD"/>
+<img src="https://img.shields.io/badge/Azure-161b22?style=flat-square&logo=microsoftazure&logoColor=0078D4" alt="Azure"/>
 </td>
 </tr>
 </table>
 
-### Frontend
-<table>
-<tr>
-<td align="center" width="110">
-<img src="https://skillicons.dev/icons?i=react" height="28"/><br>
-<sub>React</sub>
-</td>
+<br/>
 
-<td align="center" width="110">
-<img src="https://skillicons.dev/icons?i=tailwind" height="28"/><br>
-<sub>Tailwind</sub>
-</td>
+<!-- PROJECTS: columns # 60 + project 200 + description 340 + tech 200 = 800. Copy a tr block to add a row. -->
+
+<!-- 
+<img src="./assets/prompt-projects.svg" alt="github@portfolio:~$ ls -l ~/projects --pinned" width="800"/>
+
+<table width="800" cellpadding="10" cellspacing="0">
+<tr>
+<th width="60" align="center"><code>#</code></th>
+<th width="200" align="left"><code>project</code></th>
+<th width="340" align="left"><code>description</code></th>
+<th width="200" align="left"><code>stack</code></th>
+</tr>
+<tr>
+<td align="center" valign="middle">1</td>
+<td valign="middle"><b><a href="https://github.com/GH_USERNAME/REPO_NAME">PROJECT_NAME</a></b></td>
+<td valign="middle">DESCRIPTION</td>
+<td valign="middle"><code>TECH</code> <code>TECH</code></td>
+</tr>
+<tr>
+<td align="center" valign="middle">2</td>
+<td valign="middle"><b><a href="https://github.com/GH_USERNAME/REPO_NAME">PROJECT_NAME</a></b></td>
+<td valign="middle">DESCRIPTION</td>
+<td valign="middle"><code>TECH</code> <code>TECH</code></td>
+</tr>
+<tr>
+<td align="center" valign="middle">3</td>
+<td valign="middle"><b><a href="https://github.com/GH_USERNAME/REPO_NAME">PROJECT_NAME</a></b></td>
+<td valign="middle">DESCRIPTION</td>
+<td valign="middle"><code>TECH</code> <code>TECH</code></td>
+</tr>
+</table>
+ -->
+<br/>
+
+<!-- CERTS: columns # 60 + certification 340 + issuer 250 + year 150 = 800. Only list earned ones. -->
+<!--
+<img src="./assets/prompt-certs.svg" alt="github@portfolio:~$ cat ~/certifications.txt" width="800"/>
+
+<table width="800" cellpadding="10" cellspacing="0">
+<tr>
+<th width="60" align="center"><code>#</code></th>
+<th width="340" align="left"><code>certification</code></th>
+<th width="250" align="left"><code>issuer</code></th>
+<th width="150" align="left"><code>year</code></th>
+</tr>
+<tr>
+<td align="center" valign="middle">1</td>
+<td valign="middle">CERTIFICATION_NAME</td>
+<td valign="middle">ISSUING_ORGANIZATION</td>
+<td valign="middle">YEAR</td>
+</tr>
+<tr>
+<td align="center" valign="middle">2</td>
+<td valign="middle">CERTIFICATION_NAME</td>
+<td valign="middle">ISSUING_ORGANIZATION</td>
+<td valign="middle">YEAR</td>
+</tr>
+<tr>
+<td align="center" valign="middle">3</td>
+<td valign="middle">CERTIFICATION_NAME</td>
+<td valign="middle">ISSUING_ORGANIZATION</td>
+<td valign="middle">YEAR</td>
+</tr>
+</table>
+-->
+
+<br/>
+
+<!-- LEETCODE: one profile link. Optional live stats card: swap the link for the img line in the comment below.
+  <img src="https://leetcard.jacoblin.cool/LC_USERNAME?theme=dark&font=Fira%20Code&ext=heatmap&border=0&radius=8" alt="LeetCode stats" width="800"/>
+-->
+<!--
+<img src="./assets/prompt-leetcode.svg" alt="github@portfolio:~$ ./leetcode --stats" width="800"/>
+
+<table width="800" cellpadding="10" cellspacing="0">
+<tr>
+<td width="130" valign="middle"><code>profile</code></td>
+<td width="670" valign="middle"><a href="https://leetcode.com/u/LC_USERNAME/">leetcode.com/u/LC_USERNAME ↗</a></td>
+</tr>
+</table>
+-->
+
+<br/>
+
+<!-- CONTACT: three equal cells (267 + 266 + 267 = 800), badges centered so the row is symmetrical. Delete a cell to remove a link. -->
+<img src="./assets/prompt-contact.svg" alt="github@portfolio:~$ ./contact.sh" width="800"/>
+
+<table width="800" cellpadding="10" cellspacing="0">
+<tr>
+<td width="267" align="center" valign="middle"><a href="https://www.linkedin.com/in/LINKEDIN_USERNAME"><img src="https://img.shields.io/badge/LinkedIn-161b22?style=for-the-badge&logo=linkedin&logoColor=0A66C2" alt="LinkedIn"/></a></td>
+<td width="266" align="center" valign="middle"><a href="https://YOUR_PORTFOLIO_URL"><img src="https://img.shields.io/badge/Portfolio-161b22?style=for-the-badge&logo=firefoxbrowser&logoColor=00ff41" alt="Portfolio"/></a></td>
+<td width="267" align="center" valign="middle"><a href="https://leetcode.com/u/LC_USERNAME/"><img src="https://img.shields.io/badge/LeetCode-161b22?style=for-the-badge&logo=leetcode&logoColor=FFA116" alt="LeetCode"/></a></td>
 </tr>
 </table>
 
-### Backend
-<table>
-<tr>
-<td align="center" width="110">
-<img src="https://skillicons.dev/icons?i=nodejs" height="28"/><br>
-<sub>Node</sub>
-</td>
+<br/>
 
-<td align="center" width="110">
-<img src="https://skillicons.dev/icons?i=express" height="28"/><br>
-<sub>Express</sub>
-</td>
-
-<td align="center" width="110">
-<img src="https://cdn.simpleicons.org/jsonwebtokens/white" height="28"/><br>
-<sub>JWT</sub>
-</td>
-
-<td align="center" width="110">
-<img src="https://cdn.simpleicons.org/stripe/white" height="28"/><br>
-<sub>Stripe</sub>
-</td>
-
-<td align="center" width="110">
-<img src="https://cdn.simpleicons.org/socketdotio/white" height="28"/><br>
-<sub>Socket.IO</sub>
-</td>
-</tr>
-</table>
-
-### Databases
-<table>
-<tr>
-<td align="center" width="120">
-<img src="https://skillicons.dev/icons?i=mongodb" height="28"/><br>
-<sub>MongoDB</sub>
-</td>
-
-<td align="center" width="120">
-<img src="https://skillicons.dev/icons?i=postgres" height="28"/><br>
-<sub>Postgres</sub>
-</td>
-</tr>
-</table>
-
-### Tools & Deployment
-<table>
-<tr>
-<td align="center" width="110">
-<img src="https://skillicons.dev/icons?i=git" height="28"/><br>
-<sub>Git</sub>
-</td>
-
-<td align="center" width="110">
-<img src="https://skillicons.dev/icons?i=postman" height="28"/><br>
-<sub>Postman</sub>
-</td>
-
-<td align="center" width="110">
-<img src="https://skillicons.dev/icons?i=vercel" height="28"/><br>
-<sub>Vercel</sub>
-</td>
-
-<td align="center" width="110">
-<img src="https://cdn.simpleicons.org/render/white" height="28"/><br>
-<sub>Render</sub>
-</td>
-
-</tr>
-</table>
+<!-- END: final prompt with blinking cursor -->
+<img src="./assets/prompt-end.svg" alt="github@portfolio:~$" width="800"/>
