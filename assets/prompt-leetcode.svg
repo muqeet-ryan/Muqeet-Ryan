@@ -2,7 +2,7 @@
 <title>github@portfolio:~$ ./leetcode --stats</title>
 <!-- Command text starts at x=216. textLength = chars x 9.6 (18 chars = 172.8). Do not put two hyphens in a comment: invalid XML. -->
 <style>text{font-family:'Fira Code','JetBrains Mono',Consolas,Menlo,'DejaVu Sans Mono','Courier New',monospace;font-size:16px}</style>
-<rect x="1" y="1" width="798" height="34" rx="8" fill="#0d1117" stroke="#30363d" stroke-width="2"/>
+<rect x="1" y="1" width="798" height="34" fill="#0d1117" stroke="#30363d" stroke-width="2"/>
 <text x="24" y="23" textLength="182.4" lengthAdjust="spacing"><tspan fill="#00ff41" font-weight="700">github@portfolio</tspan><tspan fill="#c9d1d9">:</tspan><tspan fill="#58a6ff" font-weight="700">~</tspan><tspan fill="#c9d1d9">$</tspan></text>
 <text x="216" y="23" fill="#c9d1d9" textLength="172.8" lengthAdjust="spacing">./leetcode --stats</text>
 </svg>
