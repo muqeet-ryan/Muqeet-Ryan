@@ -99,7 +99,7 @@
 <br/>
 
 <!-- CERTS: columns # 60 + certification 340 + issuer 250 + year 150 = 800. Only list earned ones. -->
-<!--
+
 <img src="./assets/prompt-certs.svg" alt="github@portfolio:~$ cat ~/certifications.txt" width="800"/>
 
 <table width="800" cellpadding="10" cellspacing="0">
@@ -111,40 +111,53 @@
 </tr>
 <tr>
 <td align="center" valign="middle">1</td>
-<td valign="middle">CERTIFICATION_NAME</td>
-<td valign="middle">ISSUING_ORGANIZATION</td>
-<td valign="middle">YEAR</td>
+<td valign="middle">AZ</td>
+<td valign="middle">MS</td>
+<td valign="middle">202</td>
 </tr>
 <tr>
 <td align="center" valign="middle">2</td>
-<td valign="middle">CERTIFICATION_NAME</td>
-<td valign="middle">ISSUING_ORGANIZATION</td>
-<td valign="middle">YEAR</td>
+<td valign="middle">ASP</td>
+<td valign="middle">MS</td>
+<td valign="middle">202</td>
 </tr>
 <tr>
 <td align="center" valign="middle">3</td>
-<td valign="middle">CERTIFICATION_NAME</td>
-<td valign="middle">ISSUING_ORGANIZATION</td>
-<td valign="middle">YEAR</td>
+<td valign="middle">Foundational C# with Microsoft</td>
+<td valign="middle">freeCodeCamp</td>
+<td valign="middle">2026</td>
 </tr>
 </table>
--->
+
 
 <br/>
 
-<!-- LEETCODE: one profile link. Optional live stats card: swap the link for the img line in the comment below.
-  <img src="https://leetcard.jacoblin.cool/LC_USERNAME?theme=dark&font=Fira%20Code&ext=heatmap&border=0&radius=8" alt="LeetCode stats" width="800"/>
--->
-<!--
+
+<!-- LEETCODE: LIVE STATS -->
 <img src="./assets/prompt-leetcode.svg" alt="github@portfolio:~$ ./leetcode --stats" width="800"/>
 
 <table width="800" cellpadding="10" cellspacing="0">
-<tr>
-<td width="130" valign="middle"><code>profile</code></td>
-<td width="670" valign="middle"><a href="https://leetcode.com/u/LC_USERNAME/">leetcode.com/u/LC_USERNAME ↗</a></td>
-</tr>
+  <tr>
+    <td valign="middle" width="130"><code>leetcode</code></td>
+    <td valign="middle" width="670">
+      <a href="https://leetcode.com/u/Muqeet_Ryan/">
+        leetcode.com/u/Muqeet_Ryan ↗
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center">
+      <a href="https://leetcode.com/u/Muqeet_Ryan/">
+        <img
+          src="https://leetcard.jacoblin.cool/Muqeet_Ryan?theme=dark&font=Fira%20Code&ext=heatmap&border=0&radius=8"
+          alt="Muqeet Ryan LeetCode statistics"
+          width="800"
+        />
+      </a>
+    </td>
+  </tr>
 </table>
--->
+
 
 <br/>
 
@@ -153,9 +166,9 @@
 
 <table width="800" cellpadding="10" cellspacing="0">
 <tr>
-<td width="267" align="center" valign="middle"><a href="https://www.linkedin.com/in/LINKEDIN_USERNAME"><img src="https://img.shields.io/badge/LinkedIn-161b22?style=for-the-badge&logo=linkedin&logoColor=0A66C2" alt="LinkedIn"/></a></td>
-<td width="266" align="center" valign="middle"><a href="https://YOUR_PORTFOLIO_URL"><img src="https://img.shields.io/badge/Portfolio-161b22?style=for-the-badge&logo=firefoxbrowser&logoColor=00ff41" alt="Portfolio"/></a></td>
-<td width="267" align="center" valign="middle"><a href="https://leetcode.com/u/LC_USERNAME/"><img src="https://img.shields.io/badge/LeetCode-161b22?style=for-the-badge&logo=leetcode&logoColor=FFA116" alt="LeetCode"/></a></td>
+<td width="267" align="center" valign="middle"><a href="https://www.linkedin.com/in/muqeet-ryan/"><img src="https://img.shields.io/badge/LinkedIn-161b22?style=for-the-badge&logo=linkedin&logoColor=0A66C2" alt="LinkedIn"/></a></td>
+<td width="266" align="center" valign="middle"><a href="https://ryans-portfolio-gamma.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-161b22?style=for-the-badge&logo=firefoxbrowser&logoColor=00ff41" alt="Portfolio"/></a></td>
+<td width="267" align="center" valign="middle"><a href="https://leetcode.com/u/Muqeet_Ryan/"><img src="https://img.shields.io/badge/LeetCode-161b22?style=for-the-badge&logo=leetcode&logoColor=FFA116" alt="LeetCode"/></a></td>
 </tr>
 </table>
 
